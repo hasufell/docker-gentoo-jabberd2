@@ -25,4 +25,4 @@ COPY ./config/supervisord.conf /etc/supervisord.conf
 
 EXPOSE 5222 5223 5269
 
-CMD ["/usr/bin/supervisord", "-n", "-c", "/etc/supervisord.conf"]
+CMD exec /usr/bin/supervisord -n -c /etc/supervisord.conf
