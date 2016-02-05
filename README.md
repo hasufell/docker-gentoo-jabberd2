@@ -1,13 +1,13 @@
 ## Installation
 
 ```sh
-docker build -t hasufell/gentoo-jabberd2 .
+docker build -t mosaiksoftware/gentoo-jabberd2 .
 ```
 
 Also get the mysql image:
 
 ```sh
-docker pull hasufell/gentoo-mysql
+docker pull mosaiksoftware/gentoo-mysql
 ```
 
 ## Configuration
@@ -28,7 +28,7 @@ docker run -ti -d \
 	-p 3309 \
 	-e MYSQL_PORT=3309 \
 	-e MYSQL_PASS=<admin-pq> \
-	hasufell/gentoo-mysql
+	mosaiksoftware/gentoo-mysql
 ```
 
 Copy the mysqldump or raw db scheme
@@ -53,7 +53,7 @@ docker run -ti -d \
 	-p 5222:5222 \
 	-p 5223:5223 \
 	-p 5269:5269 \
-	hasufell/gentoo-jabberd2
+	mosaiksoftware/gentoo-jabberd2
 ```
 
 
